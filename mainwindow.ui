@@ -80,16 +80,16 @@
     <layout class="QVBoxLayout" name="objLayout">
      <item>
       <widget class="QWidget" name="widget" native="true">
-       <widget class="QFrame" name="realEstateFrame">
+       <widget class="QFrame" name="listFrame">
         <property name="enabled">
          <bool>true</bool>
         </property>
         <property name="geometry">
          <rect>
-          <x>540</x>
-          <y>360</y>
-          <width>161</width>
-          <height>101</height>
+          <x>0</x>
+          <y>0</y>
+          <width>451</width>
+          <height>271</height>
          </rect>
         </property>
         <property name="frameShape">
@@ -98,16 +98,21 @@
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QTableView" name="realEstateTableView">
+        <widget class="QTableView" name="listObjView">
          <property name="geometry">
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>701</width>
-           <height>461</height>
+           <width>441</width>
+           <height>261</height>
           </rect>
          </property>
         </widget>
+        <zorder>listObjView</zorder>
+        <zorder>objFrame</zorder>
+        <zorder>objFrame</zorder>
+        <zorder>objFrame</zorder>
+        <zorder>objFrame</zorder>
        </widget>
        <widget class="QFrame" name="ErrorFrame">
         <property name="geometry">
@@ -147,13 +152,13 @@
          </property>
         </widget>
        </widget>
-       <widget class="QFrame" name="movableFrame">
+       <widget class="QFrame" name="objFrame">
         <property name="geometry">
          <rect>
-          <x>370</x>
-          <y>380</y>
-          <width>141</width>
-          <height>81</height>
+          <x>280</x>
+          <y>20</y>
+          <width>411</width>
+          <height>321</height>
          </rect>
         </property>
         <property name="frameShape">
@@ -162,40 +167,20 @@
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QTableView" name="movableTableView">
-         <property name="enabled">
-          <bool>true</bool>
-         </property>
+        <widget class="QTableView" name="objView">
          <property name="geometry">
           <rect>
-           <x>-10</x>
+           <x>0</x>
            <y>0</y>
-           <width>151</width>
-           <height>91</height>
+           <width>401</width>
+           <height>321</height>
           </rect>
          </property>
         </widget>
        </widget>
-       <widget class="QFrame" name="realListFrame">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>110</y>
-          <width>120</width>
-          <height>80</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-       </widget>
        <zorder>ErrorFrame</zorder>
-       <zorder>realEstateFrame</zorder>
-       <zorder>movableFrame</zorder>
-       <zorder>realListFrame</zorder>
+       <zorder>listFrame</zorder>
+       <zorder>objFrame</zorder>
       </widget>
      </item>
     </layout>

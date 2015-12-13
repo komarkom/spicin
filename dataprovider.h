@@ -12,6 +12,7 @@ public:
     void init(QString dbName="db_name.sqlite");
     void insertVal(MObjectInv e);
     void insertVal(MError e);
+    int insertTestData();
     QList<MObjectInv> dbSelectObj (QSqlDatabase db);
     QList<MError> dbSelectErr (QSqlDatabase db);
     QString close(QString dbName="db_name.sqlite");
