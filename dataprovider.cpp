@@ -129,6 +129,20 @@ QList<MError> dataprovider::dbSelectErr (QSqlDatabase db) {
     return lst;
 }
 
+void dataprovider::deleteobject(MError e)
+{
+    QSqlQuery q(dataBase);
+    q.prepare("DELETE FROM MError WHERE ObjNumber=:ObjNumber AND FieldName=:FieldName");
+    q.bindValue(":ObjNumber", e.ObjNumber);
+    q.bindValue(":FieldName", e.FieldName);
+
+    if (!q.exec()) {
+        QSqlError err = q.lastError();
+        QString errText = err.text();
+        return;
+    }
+}
+
 int dataprovider::insertTestData()
 {
  //       QSqlQuery a_query(dataBase);

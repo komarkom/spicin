@@ -15,6 +15,7 @@ public:
     int insertTestData();
     QList<MObjectInv> dbSelectObj (QSqlDatabase db);
     QList<MError> dbSelectErr (QSqlDatabase db);
+    void deleteobject(MError e);
     QString close(QString dbName="db_name.sqlite");
     QSqlDatabase _getDatabase();
 private:

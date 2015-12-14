@@ -108,6 +108,8 @@
           </rect>
          </property>
         </widget>
+        <zorder>listObjView</zorder>
+        <zorder>ErrorFrame</zorder>
        </widget>
        <widget class="QFrame" name="objFrame">
         <property name="geometry">
@@ -127,10 +129,10 @@
         <widget class="QTableView" name="objView">
          <property name="geometry">
           <rect>
-           <x>0</x>
-           <y>0</y>
-           <width>401</width>
-           <height>321</height>
+           <x>20</x>
+           <y>10</y>
+           <width>391</width>
+           <height>271</height>
           </rect>
          </property>
         </widget>
@@ -138,10 +140,10 @@
        <widget class="QFrame" name="ErrorFrame">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>270</y>
-          <width>351</width>
-          <height>171</height>
+          <x>10</x>
+          <y>190</y>
+          <width>661</width>
+          <height>251</height>
          </rect>
         </property>
         <property name="frameShape">
@@ -153,7 +155,7 @@
         <widget class="QTableView" name="errorTableView">
          <property name="geometry">
           <rect>
-           <x>0</x>
+           <x>10</x>
            <y>10</y>
            <width>331</width>
            <height>151</height>
