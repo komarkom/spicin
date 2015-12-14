@@ -34,7 +34,7 @@ void dataprovider::init(QString dbName)
     if (!dataBase.tables().contains(QLatin1String("MError"))) {
         QSqlQuery a_query(dataBase);
         QString str = "CREATE TABLE MError ("
-                "ObjNumber integer PRIMARY KEY NOT NULL, "
+                "ObjNumber integer , "
                 "FieldName integer, "
                 "Comment VARCHAR(255) "
                 ");";

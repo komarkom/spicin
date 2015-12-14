@@ -23,7 +23,43 @@ public:
         this->IsUsed = _IsUsed;
     }
 
-public:
+//    int getFieldNumber(QString fieldName)
+//    {
+//        switch (fieldName) {
+//        case "InvNumber":
+//            return 0;
+//            break;
+//        case "Address":
+//            return 1;
+//            break;
+//        case "Name":
+//            return 2;
+//            break;
+//        case "Subtype":
+//            return 3;
+//            break;
+//        case "ManagingManComp":
+//            return 4;
+//            break;
+//        case "StartupDate":
+//            return 5;
+//            break;
+//        case "OKN":
+//            return 6;
+//            break;
+//        case "BookValueRur":
+//            return 7;
+//            break;
+//        case "MarketBalance":
+//            return 8;
+//            break;
+//        case "IsUsed":
+//            return 9;
+//            break;
+//        default:
+//            break;
+//        }
+//    }
     int InvNumber;
     QString Address;
     QString Name;
