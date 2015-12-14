@@ -26,6 +26,8 @@ private slots:
     void onTableClicked(const QModelIndex &index);
     void onErrorFieldClicked(const QModelIndex &index);
 
+    void on_statButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     dataprovider *dp;
