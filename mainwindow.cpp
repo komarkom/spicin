@@ -20,7 +20,6 @@ MainWindow::MainWindow(QWidget *parent, dataprovider *dp) :
     connect(ui->objView, SIGNAL(doubleClicked(const QModelIndex &)), this, SLOT(onErrorFieldClicked(const QModelIndex &)));
     connect(ui->listObjView, SIGNAL(clicked(const QModelIndex &)), this, SLOT(onTableClicked(const QModelIndex &)));
     on_statButton_clicked();
-
 }
 
 MainWindow::~MainWindow()
