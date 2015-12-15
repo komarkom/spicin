@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>993</width>
-    <height>655</height>
+    <width>940</width>
+    <height>581</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>841</width>
+    <width>940</width>
     <height>581</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>456456</width>
-    <height>456456</height>
+    <width>940</width>
+    <height>581</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -36,7 +36,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>60</y>
+      <y>80</y>
       <width>232</width>
       <height>384</height>
      </rect>
@@ -131,13 +131,12 @@ background-color:#ffffff;
 QPushButton:hover {
 	background-color:#019ad2;
 }
-QPushButtonn:active {
-	position:relative;
-	top:1px;
-background-color:#ffffff;
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
 }
 
-        </string>
+</string>
        </property>
        <property name="text">
         <string>Движимое имущество</string>
@@ -277,7 +276,7 @@ background-color:#ffffff;
     <property name="geometry">
      <rect>
       <x>260</x>
-      <y>60</y>
+      <y>80</y>
       <width>661</width>
       <height>461</height>
      </rect>
@@ -316,8 +315,6 @@ background-color:#ffffff;
           <string notr="true"/>
          </property>
         </widget>
-        <zorder>listObjView</zorder>
-        <zorder>ErrorFrame</zorder>
        </widget>
        <widget class="QFrame" name="objFrame">
         <property name="geometry">
@@ -347,8 +344,6 @@ background-color:#ffffff;
           <string notr="true"/>
          </property>
         </widget>
-        <zorder>objView</zorder>
-        <zorder>ErrorFrame</zorder>
        </widget>
        <widget class="QFrame" name="ErrorFrame">
         <property name="geometry">
@@ -390,8 +385,6 @@ background-color:#ffffff;
           <string notr="true"/>
          </property>
         </widget>
-        <zorder>errorTableView</zorder>
-        <zorder>objFrame</zorder>
        </widget>
        <widget class="QFrame" name="staticticframe">
         <property name="geometry">
@@ -417,10 +410,6 @@ background-color:#ffffff;
            <height>461</height>
           </rect>
          </property>
-         <zorder>listFrame</zorder>
-         <zorder>objFrame</zorder>
-         <zorder>frame</zorder>
-         <zorder>objFrame</zorder>
         </widget>
        </widget>
        <zorder>staticticframe</zorder>
@@ -430,6 +419,33 @@ background-color:#ffffff;
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>15</y>
+      <width>911</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Инвентаризация имущества</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>

@@ -40,6 +40,8 @@ void MainWindow::on_realEstateButton_clicked()
     Utils::prepareDataList(dp, model, "Здание");
     ui->listObjView->setModel(model);
     ui->listObjView->resizeColumnsToContents();
+
+    ui->label_3->setText("Недвижимое имущество");
 }
 
 void MainWindow::onTableClicked(const QModelIndex &index)
@@ -89,6 +91,7 @@ void MainWindow::on_movablesButton_clicked()
     Utils::prepareDataList(dp, model, "Движимое");
     ui->listObjView->setModel(model);
     ui->listObjView->resizeColumnsToContents();
+    ui->label_3->setText("Движимое имущество");
 }
 
 void MainWindow::on_errorButton_clicked()
@@ -101,6 +104,7 @@ void MainWindow::on_errorButton_clicked()
     QStandardItemModel *model = new QStandardItemModel;
     Utils::prepareDataError(dp,model);
     ui->errorTableView->setModel(model);
+    ui->label_3->setText("Выявленные ошибки");
 }
 
 
@@ -112,6 +116,7 @@ void MainWindow::on_statButton_clicked()
     ui->listFrame->hide();
     ui->objFrame->hide();
     ui->staticticframe->show();
+    ui->label_3->setText("Статистика по выявленным ошибкам");
     //        QCPBars *regen = new QCPBars(ui->widget_2->xAxis, ui->widget_2->yAxis);
     //        QCPBars *nuclear = new QCPBars(ui->widget_2->xAxis, ui->widget_2->yAxis);
             QCPBars *fossil = new QCPBars(ui->widget_2->xAxis, ui->widget_2->yAxis);
